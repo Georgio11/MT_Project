@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main</title>
+	<link rel="shortcut icon" href="img/icon.png" type="image/png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container header_container">
+			<a href="#" class="logo">MD</a>
+			<nav class="header_nav nav">
+				<ul class="menu_list">
+					<li>
+						<ul class="nav_items">
+							<li><a href="#">Про мене</a></li>
+							<li><a href="#skills">Мої вміння</a></li>
+							<li><a href="projects.html">Мої проєкти</a></li>
+							<li><a href="experience.html">Досвід</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="nav_social">
+							<li><a target="blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+							<li><a target="blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+							<li><a target="blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="header_menu-icon">
+                <span></span>
+            </div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container main_container">
+			<section class="info">
+				<h1>Maria Dumanska</h1>
+				<p>I’m a full-stack developer with great experience and passion for coding and building plain interfaces. I have a manic love for great high-loaded projects. Plus, I’m an easy-going person and fit in any team. I work remotely and save your budget on my workplace. So, if you have a complicated task, you’ve found the right person. </p>
+				<img class="photo" src="img/photo.png" alt="photo">
+			</section>
+			<section id="skills" class="skills">
+				<h2>Вміння</h2>
+				<div class="skills_cards">
+					<div class="skills_card card">
+						<div class="skills_card-description skills_card-item">
+							<h3>Back-end Developer</h3>
+							<p>
+							Develop business logic and back-end system to support the product, create API, have vast experience with version control systems.</p>
+						</div>
+						<div class="skills_card_stack skills_card-item">
+							<h4 class="purple">Languages:</h4>
+							<p>PHP, Python, Ruby, Java, Perl</p>
+						</div>
+						<div class="skills_card_tools skills_card-item">
+							<h4 class="purple">My Tools:</h4>
+							<ul class="tools">
+								<li>Yii</li>
+								<li>Symfony</li>
+								<li>MySQL</li>
+								<li>Node JS</li>
+								<li>PostgreSQL</li>
+							</ul>
+						</div>
+					</div>
+					<div class="skills_card card">
+						<div class="skills_card-description skills_card-item">
+							<h3>Front-end Developer</h3>
+							<p>I code things from scratch, and gracefully bring the ideas to life and to the bowser, paying maximal attention to your vision of the product.</p>
+						</div>
+						<div class="skills_card_stack skills_card-item">
+							<h4 class="purple">Technologies Stack:</h4>
+							<p>HTML, JavaScript, Slim, CSS,Pug</p>
+						</div>
+						<div class="skills_card_tools skills_card-item">
+							<h4 class="purple">My Tools:</h4>
+							<ul class="tools">
+								<li>Bootstrap</li>
+								<li>AJAX</li>
+								<li>Github</li>
+								<li>AngularJS/ReactJS</li>
+								<li>Atom</li>
+							</ul>
+						</div>
+					</div>
+					<div class="skills_card card">
+						<div class="skills_card-description skills_card-item">
+							<h3>Designer</h3>
+							<p>I create both easy and simple, and more complex and detailed prototypes. Simplicity, convenience, usefulness and effectiveness at the same time.</p>
+						</div>
+						<div class="skills_card_stack skills_card-item">
+							<h4 class="purple">Things I Do:</h4>
+							<p>UX, UI, Web, Mobile, Apps, Logos</p>
+						</div>
+						<div class="skills_card_tools skills_card-item">
+							<h4 class="purple">My Tools:</h4>
+							<ul class="tools">
+								<li>Figma</li>
+								<li>Sketch</li>
+								<li>InVision</li>
+								<li>Origami</li>
+								<li>Axure</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+   	<footer class="footer">
+   		<div class="container footer_container">
+   			<div class="footer_info">
+   				<h2>Maria Dumanska</h2>
+   				<ul class="footer_menu_list menu_list">
+					<li>
+						<ul class="nav_items">
+							<li><a href="#">Про мене</a></li>
+							<li><a href="#skills">Мої вміння</a></li>
+							<li><a href="projects.html">Мої проєкти</a></li>
+							<li><a href="experience.html">Досвід</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="nav_social">
+							<li><a target="blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+							<li><a target="blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+							<li><a target="blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</li>
+				</ul>
+   			</div>
+   			<div class="footer_copy">
+   				<p>&copy; Created by Yehor</p>
+   				<p>All rights Reserved</p>
+   			</div>
+   		</div>
+   	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('.header_menu-icon').on('click', function() {
+				$(this).toggleClass('_active');
+				$('.menu_list').toggleClass('_active');
+				$('body').toggleClass('_lock');
+			});
+		});
+		$(function() {
+			$('.nav_items li a, .nav_social li a').on('click',function() {
+				$('.header_menu-icon').removeClass('_active');
+				$('.menu_list').removeClass('_active');
+				$('body').removeClass('_lock');
+			})
+		})
+	</script>
+</body>
+</html>

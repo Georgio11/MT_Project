@@ -1,0 +1,105 @@
+/*-------------------PROJECT-------------------*/
+
+.main {
+	padding-top: 80px;
+}
+
+.project_text h2 {
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.project_text p {
+	font-size: 18px;
+	color: rgb(76, 85, 106);
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.project_cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 415px);
+	grid-gap: 30px;
+	margin-bottom: 70px;
+}
+
+.project_card:nth-child(even) {
+	justify-content: center;
+	padding: 70px;
+}
+
+.project_card:nth-child(1) {
+	background: rgba(255,195,34,0.9);
+}
+
+.project_card:nth-child(3) {
+	background: rgb(88,83,255);
+}
+
+.project_card:nth-child(5) {
+	background: rgb(255,77,102);
+}
+
+.project_card:nth-child(2) {
+	border-bottom: 4px solid rgba(255,195,34,0.9);
+}
+
+.project_card:nth-child(4) {
+	border-bottom: 4px solid rgb(88,83,255);
+}
+
+.project_card:nth-child(6) {
+	border-bottom: 4px solid rgb(255,77,102);
+}
+
+.project_card img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.project_card h3 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.project_card:nth-child(2) h3 {
+	color: rgba(255,195,34,0.9);
+}
+
+.project_card:nth-child(4) h3 {
+	color: rgb(88,83,255);
+}
+
+.project_card:nth-child(6) h3 {
+	color: rgb(255,77,102);
+}
+
+.project_card p {
+	font-size: 18px;
+	color: rgb(76, 85, 106);
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.project_card a {
+	color: #4456cd;
+	font-weight: 600;
+	transition: 0.3s;
+}
+
+.project_card a:hover {
+	opacity: 0.8;
+}
+
+/*-------------------MEDIA-------------------*/
+
+@media (max-width: 850px) {
+	.project_cards {
+		grid-template-columns: 1fr;
+	}
+}
